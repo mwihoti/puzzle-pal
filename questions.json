@@ -1,0 +1,19 @@
+{
+  "questions": [
+    { "id": 1, "q": "Cardano consensus protocol?", "answer": "OUROBOROS" },
+    { "id": 2, "q": "Smallest ADA unit?", "answer": "LOVELACE" },
+    { "id": 3, "q": "Cardano governance program?", "answer": "CATALYST" },
+    { "id": 4, "q": "Hydra is a ______ solution.", "answer": "SCALING" },
+    { "id": 5, "q": "Intersect is a ____-based organization.", "answer": "MEMBER" },
+    { "id": 6, "q": "What is the native cryptocurrency of the Cardano blockchain?", "answer": "ada" },
+    {"id": 7, "q": "Which university collaborated with IOHK to develop Cardano?", "answer": "edinburgh"},
+    { "id": 8, "q": "What is the name of Cardano's proof-of-stake consensus algorithm?", "answer": "ouroboros"},
+    { "id": 9, "q": "Which founder created Cardano and was the co-founder of Ethereum?", "answer": "charles" },
+    { "id": 10, "q": "What does UTXO stand for in blockchain technology?", "answer": "unspent transaction output" },
+    {"id": 11, "q": "How many phases does Cardano's development roadmap include?", "answer": "5" },
+     {"id": 12, "q": "What is the smart contract language used on Cardano?", "answer": "plutus"},
+ {"id": 13,  "q": "What is the name of Cardano's scaling solution?", "answer": "hydra" }
+
+
+  ]
+}
