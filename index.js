@@ -122,22 +122,26 @@ exports.seedQuestions = functions.https.onRequest((req, res) => {
   cors(req, res, async () => {
     try {
       const questionsData = {
-        questions: [
-          { id: "1", q: "Cardano consensus protocol?", answer: "OUROBOROS" },
-          { id: "2", q: "Smallest ADA unit?", answer: "LOVELACE" },
-          { id: "3", q: "Cardano governance program?", answer: "CATALYST" },
-          { id: "4", q: "Hydra is a ______ solution.", answer: "SCALING" },
-          { id: "5", q: "Intersect is a ____-based organization.", answer: "MEMBER" },
-          { id: "6", q: "What is the native cryptocurrency of the Cardano blockchain?", answer: "ADA" },
-          { id: "7", q: "Which university collaborated with IOHK to develop Cardano?", answer: "EDINBURGH" },
-          { id: "8", q: "What is the name of Cardano's proof-of-stake consensus algorithm?", answer: "OUROBOROS" },
-          { id: "9", q: "Which founder created Cardano and was the co-founder of Ethereum?", answer: "CHARLES" },
-          { id: "10", q: "What does UTXO stand for in blockchain technology?", answer: "UNSPENT TRANSACTION OUTPUT" },
-          { id: "11", q: "How many phases does Cardano's development roadmap include?", answer: "5" },
-          { id: "12", q: "What is the smart contract language used on Cardano?", answer: "PLUTUS" },
-          { id: "13", q: "What is the name of Cardano's scaling solution?", answer: "HYDRA" }
-        ]
-      };
+  "questions": [
+    { "id": 1, "q": "Cardano consensus protocol?", "answer": "OUROBOROS" },
+    { "id": 2, "q": "Smallest ADA unit?", "answer": "LOVELACE" },
+    { "id": 3, "q": "Intersect is tasked with maintaining Cardano ________ ?", "answer": "core technology" },
+    { "id": 4, "q": "Intersect is tasks with shaping Cardano future ________.", "answer": "roadmap" },
+    { "id": 5, "q": "Intersect is a ____-based organization.", "answer": "MEMBER" },
+    { "id": 6, "q": "As a natural gathering place, Intersect is kind of a ______________ for Cardano?", "answer": "town square" },
+    {"id": 7, "q": "Intersect has how many committees?", "answer": "8"},
+    { "id": 8, "q": "Intersect role is not to dictate, but to empower and _____", "answer": "inform"},
+    { "id": 9, "q": "Intersect is registered as a as a Mutual Benefit Nonprofit organization in this US state: _______", "answer": "Wyoming" },
+    { "id": 10, "q": "This Intersect committee is in charge of Cardano’s Vision, strategy, and roadmap?", "answer": "Product" },
+    {"id": 11, "q": "This committee is in charge of Intersect membership sales, account management, community support, tooling grants, education, and engaging events?", "answer": "MCC" },
+     {"id": 12, "q": "This Intersect committee provides facilitation and oversight to the Cardano Community related to the governance of Cardano?", "answer": "Civics"},
+ {"id": 13,  "q": "On January 29, 2025, Cardano achieved the transition to full community governance with the enactment of this hard fork upgrade: ______", "answer": "Plomin" }
+
+
+  ]
+}
+
+
 
       await db.collection("puzzles").doc("set1").set(questionsData);
       console.log("Questions seeded successfully");
